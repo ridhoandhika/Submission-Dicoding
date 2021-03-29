@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+   box-sizing: border-box;
+   color: #ffffff;
+}
+
+body {
+   font-family: 'Quicksand', sans-serif;
+   margin: 0;
+   padding: 0;
+   background: linear-gradient(-45deg, #1f1e46, #4b4749, #653ab4, #192c28);
+}
+
+main {
+   padding: 20px;
+   overflow: auto;
+}
+
+a {
+   text-decoration: none;
+}
+
+nav a:hover {
+   font-weight: bold;
+   transition: .3s;
+}
+
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+}
+
+
+nav {
+   background-color: #FBB112;
+   padding: 5px;
+   position: sticky;
+   top: 0;
+}
+
+nav a {
+   font-size: 30px;
+   font-weight: bold;
+   text-decoration: none;
+   color: black;
+}
+
+.profile header {
+   text-align: center;
+}
+
+header {
+   display: inline;
+}
+
+footer {
+   padding: 20px;
+   background-color: #00a2c6;
+   text-align: center;
+   font-weight: bold;
+}
+
+.featured-image {
+   width: 100%;
+   border-radius: 15px;
+   max-height: 500px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.profile img {
+   width: 150px;
+   border-radius: 100%;
+}
+
+section h3 {
+   text-align: center;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 50px;
+   padding: 20px;
+   margin-top: 20px;
+   background: linear-gradient(-45deg, #3F3D56, #3F3D56, #3F3D56);
+}
+
+.card p {
+   text-align: justify;
+}
+
+.jumbotron {
+   font-size: 20px;
+   padding: 5px;
+   background-color: #00c8eb;
+   text-align: center;
+}
+
+.container {
+   width: 710px;
+   margin: 5px auto;
+   border: 5px solid white;
+   overflow: auto;
+}
+
+.thumb {
+   width: 175px;
+   height: 100px;
+   float: left;
+   border: 2px solid white;
+   box-sizing: border-box;
+}
+
+.thumb:hover {
+   opacity: 0.5;
+   cursor: pointer;
+}
+
+@keyframes fadeIn {
+   to {
+      opacity: 1;
+   }
+}
+
+.fade {
+   opacity: 0;
+   animation: fadeIn 0.5s forwards;
+}
+
+.active {
+   opacity: 0.5;
+}
+
+#contact {
+   width: 100%;
+   overflow: auto;
+   text-align: center;
+}
+
+#contact img {
+   width: 80px;
+}
+
+.col-3 {
+   width: 28%;
+   box-sizing: border-box;
+   float: left;
+   padding: 50px 10px;
+   margin: 10px;
+}
+
+.col-3 h4 {
+   padding-bottom: 10px;
+   border-bottom: 1px solid #ddd;
+   margin-bottom: 15px;
+}
+
+.col-3 p {
+   text-align: center;
+}
+
+#content {
+   float: left;
+   width: 75%;
+}
+
+aside {
+   float: right;
+   width: 25%;
+   padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+
+   #content,
+   aside {
+      width: 100%;
+      padding: 0;
+   }
+
+   .container {
+      width: 100%;
+   }
+
+   .jumbo img {
+      width: 100%;
+   }
+
+   .col-3 {
+      width: 100%;
+   }
+}
